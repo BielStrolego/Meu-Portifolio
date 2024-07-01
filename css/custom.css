@@ -1,0 +1,335 @@
+@import "../bootstrap/dist/css/bootstrap.min.css";
+
+.fade-in {
+    animation: fadeIn 1.5s forwards;
+
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%);}
+    to { transform: translateY(0); }
+}
+
+.fixed-top {
+    animation: slideDown 1s ease forwards;
+}
+
+.filtro-nav{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    padding: 0 0 8% 0;
+    pointer-events: none;
+}
+
+main#inicio{
+    height: 100vh;
+}
+
+@keyframes fadeInOutInicio {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0;}
+} /*animação exclusiva do inicio1*/
+
+.inicio1 {
+    animation-name: fadeInOutInicio;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    align-items: center;
+    padding: 25vh 0 0 0;
+}
+
+@keyframes fadeInInicio {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+} /*animação exclusiva do inicio1*/
+
+.inicio2 {
+    display: none;
+    animation-name: fadeInInicio;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    align-items: center;
+    padding: 25vh 0 0 0;
+}
+
+.btn-secondary {
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0d6efd;
+    --bs-btn-hover-border-color:#0d6efd;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0d6efd;
+    --bs-btn-active-border-color: #0d6efd;
+
+}
+
+.btn-secondary:hover {
+    transition: background-color 5s; 
+}
+
+main#projetos{
+    height: 100vh;
+    padding: 15vh 1vh 0 1vh;
+}
+  
+.container.projetos{
+    background-image: url('../assets/img/BG_win.jpg');
+    background-position: center center;
+    height: 70vh;
+}
+
+.btn.btn-default.projeto{
+    width: 140px;
+    --bs-btn-hover-border-color: rgba(255,255,255,0.1);
+    --bs-btn-hover-bg: rgba(255,255,255,0.1);
+    --bs-btn-active-bg: rgba(255,255,255,0.2);
+    --bs-btn-active-border-color: rgba(255,255,255,0.2);
+
+    color: white; /* Cor do texto */
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px  1px 0 #000,
+    1px  1px 0 #000; /* Contorno preto */
+}
+
+main#sobreMim{
+    height: 100vh;
+    padding: 10vh 1vh 0 1vh;
+}
+
+.col.sobre-mim{
+    height: 100%;
+}
+
+main#habilidades{
+    height: 100%;
+    padding: 10vh 1vh 0 1vh;
+}
+
+.btn-outline-warning.html{
+    --bs-btn-color: #fe8330;
+    --bs-btn-border-color: #fe8330;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #fe8330;
+    --bs-btn-hover-border-color: #fe8330;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #fe8330;
+    --bs-btn-active-border-color: #fe8330;
+}
+
+.btn-outline-warning.js{
+    --bs-btn-hover-color: #111;
+    --bs-btn-active-color: #111;
+}
+
+
+.btn-outline-primary.bootstrap{
+    --bs-btn-color: #9461fb;
+    --bs-btn-border-color: #9461fb;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #9461fb;
+    --bs-btn-hover-border-color: #9461fb;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #9461fb;
+    --bs-btn-active-border-color: #9461fb;
+}
+
+.btn-outline-success.node{
+    --bs-btn-color: #459e37;
+    --bs-btn-border-color: #459e37;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #459e37;
+    --bs-btn-hover-border-color: #459e37;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #459e37;
+    --bs-btn-active-border-color: #459e37;
+}
+
+.btn-outline-primary.python{
+    --bs-btn-color: #376c97;
+    --bs-btn-border-color: #376c97;
+    --bs-btn-hover-color: #ffdf59;
+    --bs-btn-hover-bg:#376c97;
+    --bs-btn-hover-border-color:#376c97;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #ffdf59;
+    --bs-btn-active-bg: #376c97;
+    --bs-btn-active-border-color: #376c97;
+}
+
+.btn-outline-primary.php{
+    --bs-btn-color: #4f5b93;
+    --bs-btn-border-color: #4f5b93;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #4f5b93;
+    --bs-btn-hover-border-color: #4f5b93;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4f5b93;
+    --bs-btn-active-border-color: #4f5b93;
+}
+
+.btn-outline-primary.mysql{
+    --bs-btn-color: #f89d25;
+    --bs-btn-border-color: #f89d25;
+    --bs-btn-hover-color: #00758f;
+    --bs-btn-hover-bg: #f89d25;
+    --bs-btn-hover-border-color: #f89d25;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #00758f;
+    --bs-btn-active-bg: #f89d25;
+    --bs-btn-active-border-color: #f89d25;
+}
+
+.modal-header.habilidades{
+    border-bottom:none;
+}
+
+.bi.modal-icon{
+    height: 300px;
+    width: 300px;
+}
+
+.modal.angular {
+    --bs-modal-bg: #dc3545;
+    color: #fff;
+}
+.modal.html {
+    --bs-modal-bg: #fe8330;
+    color: #fff;
+}
+.modal.css {
+    --bs-modal-bg: #0d6efd;
+    color: #fff;
+}
+.modal.js {
+    --bs-modal-bg: #ffc107;
+    color: #111;
+}
+.modal.ts {
+    --bs-modal-bg: #0d6efd;
+    color: #fff;
+}
+.modal.bootstrap {
+    --bs-modal-bg: #9461fb;
+    color: #fff;
+}
+.modal.ionic {
+    --bs-modal-bg: #0d6efd;
+    color: #fff;
+}
+
+.modal.node {
+    --bs-modal-bg: #459e37;
+    color: #fff;
+}
+.modal.java {
+    --bs-modal-bg:#0d6efd;
+    color: #fff;
+}
+.modal.python {
+    --bs-modal-bg:#376c97;
+    color: #ffdf59;
+}
+.modal.php {
+    --bs-modal-bg:#4f5b93;
+    color: #555555;
+}
+.modal.mysql {
+    --bs-modal-bg:#f89d25;
+    color: #00758f;
+}
+
+
+main#contatos{
+    height: 90%;
+    padding: 15vh 1vh 0 1vh;
+}
+
+path {
+    transition: fill 0.5s ease;
+  }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 1199px) {
+
+
+}
+
+@media (max-width: 991px) {
+
+    
+}
+
+@media (max-width: 767px) {
+    nav.navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    a.btn.btn-primary{
+        display:block;
+        margin: 1% 0 1% 0;
+    }
+
+    a.btn.btn-outline-secondary{
+        display:block;
+        margin: 1% 0 1% 0;
+    }
+
+    
+
+    .inicio1{
+        padding: 25vh 0 0 0;
+    }
+
+    .inicio2{
+        padding: 25vh 0 0 0;
+    }
+
+    .bi.modal-icon{
+        height: 250px;
+        width: 250px;
+    }
+
+    .vr{
+        display: none;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+}

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/icons/icon_BD.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Biel Strolego</title>
+</head>
+<body>
+  <div class="fixed-top filtro-nav"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark-color fixed-top" aria-label="Twelfth navbar example">
+            <button class="navbar-toggler ms-2 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse justify-content-md-center mt-2" id="navbar">
+                    <ul class="navbar-nav">
+                      <li class="nav-item mx-1">
+                        <a type="button" class="btn btn-primary border-2" id="btnMenuInicio" onclick="irParaInicio()">Inicio</a>
+                      </li>
+                      <li class="nav-item mx-1">
+                        <a type="button" class="btn btn-outline-secondary border-2" id="btnMenuProjetos" onclick="irParaProjetos()">Projetos</a>
+                      </li>
+                      <li class="nav-item mx-1">
+                        <a type="button" class="btn btn-outline-secondary border-2" id="btnMenuSobreMim" onclick="irParaSobreMim()">Sobre mim</a>
+                      </li>
+                      <li class="nav-item mx-1">
+                        <a type="button" class="btn btn-outline-secondary border-2" id="btnMenuHabilidades" onclick="irParaHabilidades()">Habilidades</a>
+                      </li>
+                      <li class="nav-item mx-1">
+                        <a type="button" class="btn btn-outline-secondary border-2" id="btnMenuContatos" onclick="irParaContatos()">Contatos</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section  class="fade-out">
+            <div class="container-fluid">
+              <div class=" inicio1">
+                <h1 class="text-center">Olá, eu sou <span class="text-primary">Gabriel Strolego</span></h1>
+                <h1 class="text-center">Desenvolvedor full stack</h1>
+              </div>
+              <div class="inicio2">
+                <h1 class="text-center ">Para conhecer sobre mim e meu trabalho</h1>
+                <h1 class="text-center"><span class="text-primary">Navegue</span> pela página</h1>
+                <div class="text-center mt-5"> 
+                  <a type="button" id="btnInicio1" class="btn btn-secondary btn-lg rounded-1 me-1 mt-5 px-5" onclick="irParaProjetos()">Projetos</a>
+                  <a type="button" id="btnInicio2" class="btn btn-secondary btn-lg rounded-1 ms-1 mt-5 px-5" onclick="irParaSobreMim()">Sobre mim</a>
+                </div>
+                <div class="mt-5">
+                  <h4 class="text-center text-secondary"> Você pode utilizar também o menu para navegar</h4>
+                </div>
+              </div>       
+            </div>
+        </section>
+    </main>
+
+    <main id="projetos">
+        <section class="fade-out">
+            <div class="container-fluid">
+              <h1>Projetos</h1>
+              <div class="container projetos rounded-4 border border-2 shadow my-4 p-3">
+                
+                <div class="row flex-column">
+                  <div class="col">
+                    <button type="button" class="btn btn-default projeto text-center" data-bs-toggle="modal" data-bs-target="#projeto1">
+                      <div><img src="assets/img/computador.png" height="90px" width="90px" alt="EsteComputador" class="img-fluid"></div>
+                      <div>Este Computador</div>
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-default projeto text-center" data-bs-toggle="modal" data-bs-target="#projeto2">
+                      <div><img src="assets/img/pasta.png" height="90px" width="90px" alt="Projetos Python" class="img-fluid"></div>
+                      <div>Projetos Python</div>
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-default projeto text-center" data-bs-toggle="modal" data-bs-target="#projeto3">
+                      <div><img src="assets/img/trash.png"height="90px" width="90px" alt="Lixeira" class="img-fluid"></div>
+                      <div>Lixeira</div>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- modal projeto 1-->
+                <div class="modal projetos" tabindex="-1" id="projeto1" data-bs-backdrop="false">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content shadow">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Projeto 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- modal projeto 2-->
+                <div class="modal projetos" tabindex="-1" id="projeto2" data-bs-backdrop="false">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content shadow">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Projeto 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- modal projeto 3-->
+                <div class="modal projetos" tabindex="-1" id="projeto3" data-bs-backdrop="false">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content shadow">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Projeto 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+
+              </div>
+            </div>
+        </section>
+      </main>
+
+      <main id="sobreMim">
+        <section class="fade-out">
+          <div class="container-fluid">
+            <h1>Sobre mim</h1>
+            <div class="container-sm ">
+              <div class="container text-center">
+                <div class="row align-items-center">
+                  <div class="col-1">
+
+                  </div>
+                  <div class="col sobre-mim bg-secondary-subtle rounded-4 border shadow-sm my-4 mx-4 p-4">
+                    <div class="row gap-4">
+                      <div class="col d-flex align-items-center">
+                        <img src="assets/img/dev/GabrielS.jpg" width="300" height="300" class="rounded-circle border border-light border-5 shadow float-start" alt="foto do desenvolvedor do site">
+                        <div class="vr ms-3"></div>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <p class="text-start"> Meu nome é Gabriel Strolego.</p>
+                        <p class="text-start"></p>
+                      </div>
+                      
+                    </div>
+                      
+                  </div>
+                  <div class="col-1">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+      </main>
+
+      <main id="habilidades">
+        <section class="fade-out">
+          <div class="container habilidades">
+            <h1>Habilidades</h1>
+                <div class="container rounded-4 border shadow-sm my-2 pt-2 pb-4">
+                  <h4>Front-end</h4>
+                  
+                  <div class="container text-center row align-items-center g-3">
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-danger btn-lg border-2 shadow" onmouseover="btnAngularActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalAngular">
+                        <div><svg class="bi" width="90" height="90"><use id="iconAngular" fill="#dc3545" xlink:href="#angular"></use></svg></div>
+                        <div>Angular</div>
+                      </button>
+                    </div>
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-warning html  btn-lg border-2 shadow" onmouseover="btnHtmlActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalHtml">
+                        <div><svg class="bi" width="90" height="90"><use id="iconHtml" fill="#fe8330" xlink:href="#html"></use></svg></div>
+                        <div>HTML5</div>
+                      </button>
+                    </div>
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-primary btn-lg border-2 shadow" onmouseover="btnCssActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalCss">
+                        <div><svg class="bi" width="90" height="90"><use id="iconCss" fill="#0d6efd" xlink:href="#css"></use></svg></div>
+                        <div>CSS3</div>
+                      </button>
+                    </div>
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-warning js btn-lg border-2 shadow" onmouseover="btnJsActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalJs">
+                        <div><svg class="bi" width="90" height="90"><use id="iconJs" fill="#ffc107" xlink:href="#js"></use></svg></div>
+                        <div>JavaScript</div>
+                      </button>
+                    </div>
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-primary btn-lg border-2 shadow my-1" onmouseover="btnTsActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalTs">
+                        <div ><svg class="bi rounded" width="90" height="90"><use id="iconTs" fill="#0d6efd" xlink:href="#ts"></use></svg></div>
+                        <div>TypeScript</div>
+                      </button>
+                    </div>
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-primary bootstrap btn-lg border-2 shadow"  onmouseover="btnBootstrapActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalBootstrap">
+                        <div><svg class="bi" width="90" height="90"><use id="iconBootstrap" fill="#9461fb" xlink:href="#bootstrap"></use></svg></div>
+                        <div>Bootstrap</div>
+                      </button>
+                    </div>
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-primary ionic btn-lg border-2 shadow" onmouseover="btnIonicActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalIonic">
+                        <div><svg class="bi" width="90" height="90"><use id="iconIonic" fill="#176bff" xlink:href="#ionic"></use></svg></div>
+                        <div>Ionic</div>
+                      </button>
+                    </div>
+                    <div class="col-2 d-grid"> </div>
+                    <div class="col-2 d-grid"></div>
+                    <div class="col-2 d-grid"></div>
+                    <div class="col-2 d-grid"></div>
+                    <div class="col-2 d-grid"></div>
+                  </div>
+
+                </div>
+
+
+                
+                <div class="container rounded-4 border shadow-sm my-2 pt-2 pb-4">
+                  <h4>Back-end</h4>
+
+                  <div class="container text-center row align-items-center g-3">
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-success node btn-lg border-2 shadow" onmouseover="btnNodeActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalNode">
+                        <div><svg class="bi" width="90" height="90"><use id="iconNode" fill="#459e37" xlink:href="#node"></use></svg></div>
+                        <div>Node.js</div>
+                      </button>
+                    </div>
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-primary btn-lg border-2 shadow" onmouseover="btnJavaActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalJava">
+                        <div><svg class="bi" width="90" height="90"><use id="iconJava" fill="#176bff" xlink:href="#java"></use></svg></div>
+                        <div>Java</div>
+                      </button>
+                    </div>
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-primary python btn-lg border-2 shadow" onmouseover="btnPythonActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalPython">
+                        <div><svg class="bi" width="90" height="90"><use id="iconPython" fill="#376c97" xlink:href="#python"></use></svg></div>
+                        <div>Python</div>
+                      </button>
+                    </div>
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-primary php btn-lg border-2 shadow" onmouseover="btnPhpActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalPhp">
+                        <div><svg class="bi" width="90" height="90"><use id="iconPhp" fill="#4f5b93" xlink:href="#php"></use></svg></div>
+                        <div>PHP</div>
+                      </button>
+                    </div>
+                    <div class="col d-grid">
+                      <button type="button" class="btn btn-outline-primary mysql btn-lg border-2 shadow" onmouseover="btnMysqlActive()" onmouseout="btnInactive()" data-bs-toggle="modal" data-bs-target="#modalMysql">
+                        <div><svg class="bi" width="90" height="90"><use id="iconMysql" fill="#f29111" xlink:href="#mysql"></use></svg></div>
+                        <div>MySQL</div>
+                      </button>
+                    </div>
+                    <div class="col-6 d-grid"> </div>
+                  </div>
+            </div>        
+        </section>
+
+            <!-- modal Angular -->
+            <div class="modal angular" tabindex="-1" id="modalAngular">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title ">Angular</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi bi modal-icon"><use fill="#fff" xlink:href="#angular"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">Angular é um framework de código aberto desenvolvido pelo Google para a criação de aplicativos dinâmicos e interativos da web. <br> 
+                          O Angular oferece uma estrutura sólida para o desenvolvimento, incluindo suporte a gerenciamento de estado, roteamento, validação de formulários e muito mais.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal HTML5 -->
+            <div class="modal html" tabindex="-1" id="modalHtml">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title"> HTML5 </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi bi modal-icon"><use fill="#fff" xlink:href="#html"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">O HTML5 é a quinta versão da linguagem de marcação padrão para páginas web.<br>
+                          O HTML (HyperText Markup Language) é o código usado para estruturar uma página web e seu conteúdo. Por exemplo, ele permite estruturar o conteúdo em parágrafos, listas com marcadores, imagens e tabelas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <!-- modal CSS3 -->
+            <div class="modal css" tabindex="-1" id="modalCss">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title">CSS3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi modal-icon"><use fill="#fff" xlink:href="#css"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">O CSS3 é a terceira versão das Cascading Style Sheets, também conhecidas como CSS. <br> 
+                          Essa linguagem é usada para definir estilos em projetos web, como páginas da internet. Com o CSS3, é possível criar estilos únicos para seus projetos, incluindo efeitos de transição, imagens de fundo e outros aspectos de design no layout da página.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <!-- modal JavaScript -->
+            <div class="modal js" tabindex="-1" id="modalJs">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title">JavaScript</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi modal-icon"><use fill="#111" xlink:href="#js"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">JavaScript é uma linguagem de programação de uso geral, aplicada principalmente para desenvolvimento web e desenvolvimento de software. <br>
+                          Especificamente, o JavaScript atua na programação front-end, que é a parte “visual” de uma aplicação, geralmente um site ou um aplicativo. <br> 
+                          Ele permite criar conteúdo que se atualiza dinamicamente, controlar multimídias, imagens animadas e muito mais.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <!-- modal TypeScript -->
+            <div class="modal ts" tabindex="-1" id="modalTs">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title">TypeScript</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi modal-icon"><use fill="#fff" xlink:href="#ts"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">O TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ele é um superconjunto sintático estrito do JavaScript, o que significa que adiciona tipagem estática opcional à linguagem. <br> 
+                          Em termos simples, o TypeScript oferece uma camada adicional de segurança e clareza ao seu código, garantindo que erros sejam detectados antes mesmo de você executar o programa.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <!-- modal Bootstrap -->
+            <div class="modal bootstrap" tabindex="-1" id="modalBootstrap">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title">Bootstrap</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi modal-icon"><use fill="#fff" xlink:href="#bootstrap"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">O Bootstrap é um framework front-end de código aberto usado para desenvolver sites e aplicações web. <br> 
+                          Ele combina CSS e JavaScript para estilizar elementos de páginas escritas em HTML. <br> 
+                          O Bootstrap é amplamente conhecido por sua capacidade de criar layouts responsivos que se adaptam a diferentes tamanhos de tela, incluindo dispositivos móveis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <!-- modal Ionic -->
+            <div class="modal ionic" tabindex="-1" id="modalIonic">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title">Ionic</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi modal-icon"><use fill="#fff" xlink:href="#ionic"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">O Ionic é um framework de código aberto que facilita a construção de aplicativos móveis híbridos. Ele utiliza tecnologias web como HTML, CSS e JavaScript para criar soluções que podem ser executadas em várias plataformas, como iOS, Android e Windows. <br> 
+                          Desenvolvido por Max Lynch, Ben Sperry e Adam Bradley da Drifty Co., o Ionic ajuda as equipes a criarem e distribuírem belos aplicativos híbridos, com foco na experiência do usuário e interação com o aplicativo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- modal Node.js -->
+            <div class="modal node" tabindex="-1" id="modalNode">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title">Node.js</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi modal-icon"><use fill="#fff" xlink:href="#node"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">O Node.js é um ambiente de execução JavaScript que permite rodar aplicações desenvolvidas com essa linguagem do lado do servidor. <br> 
+                          Diferentemente dos navegadores, o Node.js possibilita criar diversos tipos de aplicações web, desde servidores para sites estáticos e dinâmicos até APIs e sistemas baseados em microserviços.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <!-- modal Java -->
+            <div class="modal java" tabindex="-1" id="modalJava">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title">Java</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi modal-icon"><use fill="#fff" xlink:href="#java"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">Java é uma linguagem de programação orientada a objetos criada na década de 90 pela equipe liderada por James Gosling na Sun Microsystems, que posteriormente foi adquirida pela Oracle Corporation. <br> 
+                          Ela se tornou amplamente popular devido à sua capacidade de escrever código uma vez e executá-lo em diferentes dispositivos, desde sites e computadores até datacenters, celulares e videogames.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <!-- modal Python -->
+            <div class="modal python" tabindex="-1" id="modalPython">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title">Python</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi modal-icon"><use fill="#ffdf59" xlink:href="#python"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">Python é uma linguagem de programação de alto nível, o que significa que sua sintaxe é mais simplificada e próxima da linguagem humana. <br> 
+                          Ela é amplamente utilizada em diversas aplicações, como desktop, web, servidores e ciência de dados <br>
+                          Algumas vantagens que o tornam uma escolha popular são: <b>Simplicidade</b>, <b>Implantação Rápida</b> e <b>Alto Desempenho</b>.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <!-- modal PHP -->
+            <div class="modal php" tabindex="-1" id="modalPhp">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title">PHP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi modal-icon"><use fill="#fff" xlink:href="#php"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">O PHP é uma linguagem de programação de script utilizada na criação de sites e sistemas para a web. <br>
+                          Ela é interpretada e executada no lado do servidor, permitindo que os desenvolvedores criem páginas dinâmicas que interajam com os usuários e outros sistemas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <!-- modalMysql -->
+            <div class="modal mysql" tabindex="-1" id="modalMysql">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header habilidades">
+                    <h5 class="modal-title">Mysql</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col d-block align-items-center text-center">
+                        <div><svg class="bi modal-icon"><use fill="#00758f" xlink:href="#mysql"></use></svg></div>
+                        <div class="vr"></div>
+                      </div>
+                      <div class="col d-block align-items-center">
+                        <p class="text-start">Basicamente, o MySQL permite que você armazene, recupere e manipule informações em tabelas organizadas de forma relacional. <br> 
+                          Ele é amplamente utilizado por aplicativos e sites populares, como Facebook, Twitter, YouTube e Google.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+      </main>        
+  
+      <main id="contatos">
+        <section  class="fade-out">
+          <div class="container-fluid d-block">
+            <h1>Contatos</h1>
+
+      
+                  <ul class="bg-secondary-subtle rounded-4 border shadow-sm mx-4 p-3">
+                    <li class="list-group-item pb-4 border-bottom border-dark-subtle">
+                      <h5>E-mails:</h5>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1"> <svg class="bi" width="25" height="25"><use fill="#6c757d" xlink:href="#email"></use></svg> gsq.25@hotmail.com</a>
+                      <a type="button" class="btn btn-outline-dark border-2  my-1"> <svg class="bi" width="25" height="25"><use fill="#6c757d" xlink:href="#email"></use></svg> gsq.2525@gmail.com</a>
+                    </li>
+                    <li class="list-group-item py-4 border-bottom border-dark-subtle">
+                      <h5>Celular</h5>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1 disabled"><svg class="bi" width="25" height="25"><use fill="#111" xlink:href="#phone"></use></svg> (021) 98167-5537</a>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1"><svg class="bi" width="25" height="25"><use fill="#017561" xlink:href="#whatsapp"></use></svg> (021) 98167-5537</a>
+                    </li>
+                    <li class="list-group-item pt-4">
+                      <h5>Redes Sociais:</h5>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1"><svg class="bi" width="25" height="25"><use fill="#db1863" xlink:href="#instagram"></use></svg> @Biel_Strolego</a>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1"><svg class="bi" width="25" height="25"><use fill="#0a66c2" xlink:href="#linkedin"></use></svg> gabriel-strolego</a>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1"><svg class="bi" width="25" height="25"><use fill="#555555" xlink:href="#github"></use></svg> BielStrolego</a>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1"><svg class="bi" width="25" height="25"><use fill="#0a66c2" xlink:href="#facebook"></use></svg> gabriel-strolego</a>
+                    </li>
+                  </ul>
+                </div>
+
+
+          </div>
+
+
+        </section>
+      </main>
+
+      <footer>
+        <p class="text-center text-body-secondary"> <b>© 2024 • Gabriel Strolego</b> </p>
+      </footer>
+
+
+
+</body>
+
+<script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/animacoes.js"></script>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="angular" viewBox="0 0 448 512">
+    <path d="M185.7 268.1h76.2l-38.1-91.6-38.1 91.6zM223.8 32L16 106.4l31.8 275.7 176 97.9 176-97.9 31.8-275.7zM354 373.8h-48.6l-26.2-65.4H168.6l-26.2 65.4H93.7L223.8 81.5z"></path>
+  </symbol>
+  <symbol id="html" viewBox="0 0 384 512">
+    <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
+  </symbol>
+  <symbol id="css" viewBox="0 0 384 512">
+    <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path>
+  </symbol>
+  <symbol id="js" viewBox="0 0 50 50">
+    <path d="M 43.335938 4 L 6.667969 4 C 5.195313 4 4 5.195313 4 6.667969 L 4 43.332031 C 4 44.804688 5.195313 46 6.667969 46 L 43.332031 46 C 44.804688 46 46 44.804688 46 43.335938 L 46 6.667969 C 46 5.195313 44.804688 4 43.335938 4 Z M 27 36.183594 C 27 40.179688 24.65625 42 21.234375 42 C 18.140625 42 15.910156 39.925781 15 38 L 18.144531 36.097656 C 18.75 37.171875 19.671875 38 21 38 C 22.269531 38 23 37.503906 23 35.574219 L 23 23 L 27 23 Z M 35.675781 42 C 32.132813 42 30.121094 40.214844 29 38 L 32 36 C 32.816406 37.335938 33.707031 38.613281 35.589844 38.613281 C 37.171875 38.613281 38 37.824219 38 36.730469 C 38 35.425781 37.140625 34.960938 35.402344 34.199219 L 34.449219 33.789063 C 31.695313 32.617188 29.863281 31.148438 29.863281 28.039063 C 29.863281 25.179688 32.046875 23 35.453125 23 C 37.878906 23 39.621094 23.84375 40.878906 26.054688 L 37.910156 27.964844 C 37.253906 26.789063 36.550781 26.328125 35.453125 26.328125 C 34.335938 26.328125 33.628906 27.039063 33.628906 27.964844 C 33.628906 29.109375 34.335938 29.570313 35.972656 30.28125 L 36.925781 30.691406 C 40.171875 32.078125 42 33.496094 42 36.683594 C 42 40.117188 39.300781 42 35.675781 42 Z"></path>
+  </symbol>
+  <symbol id="ts" viewBox="0 0 50 50">
+    <path d="M45,4H5C4.447,4,4,4.448,4,5v40c0,0.552,0.447,1,1,1h40c0.553,0,1-0.448,1-1V5C46,4.448,45.553,4,45,4z M29,26.445h-5V42h-4	V26.445h-5V23h14V26.445z M30.121,41.112v-4.158c0,0,2.271,1.712,4.996,1.712c2.725,0,2.62-1.782,2.62-2.026	c0-2.586-7.721-2.586-7.721-8.315c0-7.791,11.25-4.717,11.25-4.717l-0.14,3.704c0,0-1.887-1.258-4.018-1.258s-2.9,1.013-2.9,2.096	c0,2.795,7.791,2.516,7.791,8.141C42,44.955,30.121,41.112,30.121,41.112z"></path>
+  </symbol>
+  <symbol id="bootstrap" viewBox="0 0 576 512">
+    <path d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4 238.2 333.5 225 333.5 201.4zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1 0-55.8 28.1-54.7 58.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3 .3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5C542.7 239.2 526.5 219.6 517 188.6zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3C383.4 349.7 352.1 375.1 300.2 375.1zM290.2 266.4h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5C344.7 279.6 326.1 266.4 290.2 266.4z"></path>
+  </symbol>
+  <symbol id="ionic" viewBox="0 0 512 512">
+    <path  d="M256 153.9A102.1 102.1 0 10358.1 256 102.23 102.23 0 00256 153.9z"/><circle cx="402.59" cy="116.45" r="46.52"/><path d="M459.86 163.2l-1.95-4.28-3.11 3.52a70 70 0 01-28.06 19.32l-3 1.1 1.22 2.93A181.43 181.43 0 01439 256c0 100.92-82.1 183-183 183S73 356.92 73 256 155.08 73 256 73a180.94 180.94 0 0178.43 17.7l2.87 1.3 1.25-2.92A70.19 70.19 0 01359.21 62l3.67-2.93-4.17-2.07A221.61 221.61 0 00256 32C132.49 32 32 132.49 32 256s100.49 224 224 224 224-100.49 224-224a222.19 222.19 0 00-20.14-92.8z"></path>
+  </symbol>
+  <symbol id="node" viewBox="0 0 448 512">
+    <path d="M224 508c-6.7 0-13.5-1.8-19.4-5.2l-61.7-36.5c-9.2-5.2-4.7-7-1.7-8 12.3-4.3 14.8-5.2 27.9-12.7 1.4-.8 3.2-.5 4.6 .4l47.4 28.1c1.7 1 4.1 1 5.7 0l184.7-106.6c1.7-1 2.8-3 2.8-5V149.3c0-2.1-1.1-4-2.9-5.1L226.8 37.7c-1.7-1-4-1-5.7 0L36.6 144.3c-1.8 1-2.9 3-2.9 5.1v213.1c0 2 1.1 4 2.9 4.9l50.6 29.2c27.5 13.7 44.3-2.4 44.3-18.7V167.5c0-3 2.4-5.3 5.4-5.3h23.4c2.9 0 5.4 2.3 5.4 5.3V378c0 36.6-20 57.6-54.7 57.6-10.7 0-19.1 0-42.5-11.6l-48.4-27.9C8.1 389.2 .7 376.3 .7 362.4V149.3c0-13.8 7.4-26.8 19.4-33.7L204.6 9c11.7-6.6 27.2-6.6 38.8 0l184.7 106.7c12 6.9 19.4 19.8 19.4 33.7v213.1c0 13.8-7.4 26.7-19.4 33.7L243.4 502.8c-5.9 3.4-12.6 5.2-19.4 5.2zm149.1-210.1c0-39.9-27-50.5-83.7-58-57.4-7.6-63.2-11.5-63.2-24.9 0-11.1 4.9-25.9 47.4-25.9 37.9 0 51.9 8.2 57.7 33.8 .5 2.4 2.7 4.2 5.2 4.2h24c1.5 0 2.9-.6 3.9-1.7s1.5-2.6 1.4-4.1c-3.7-44.1-33-64.6-92.2-64.6-52.7 0-84.1 22.2-84.1 59.5 0 40.4 31.3 51.6 81.8 56.6 60.5 5.9 65.2 14.8 65.2 26.7 0 20.6-16.6 29.4-55.5 29.4-48.9 0-59.6-12.3-63.2-36.6-.4-2.6-2.6-4.5-5.3-4.5h-23.9c-3 0-5.3 2.4-5.3 5.3 0 31.1 16.9 68.2 97.8 68.2 58.4-.1 92-23.2 92-63.4z"></path>
+  </symbol>
+  <symbol id="java" viewBox="0 0 384 512">
+    <path d="M277.7 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.8 0 242.8 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.2 12.2 0 0 1 -2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.3 17.3 0 0 0 -8.2 6.3 70.5 70.5 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6 .7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.8 509.4 401 461.3 348 437.4zM124.4 396c-78.7 22 47.9 67.4 148.1 24.5a185.9 185.9 0 0 1 -28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.6 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.4 60.4 0 0 1 -21.1-12.8z"></path>
+  </symbol>
+  <symbol id="python" viewBox="0 0 448 512">
+    <path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4 .1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3 .1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"></path>
+  </symbol>
+  <symbol id="php" viewBox="0 0 640 512">
+    <path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"></path>
+  </symbol>
+  <symbol id="mysql" viewBox="0 0 24 24">
+    <path d="m24.129 23.412-.508-.484c-.251-.331-.518-.624-.809-.891l-.005-.004q-.448-.407-.931-.774-.387-.266-1.064-.641c-.371-.167-.661-.46-.818-.824l-.004-.01-.048-.024c.212-.021.406-.06.592-.115l-.023.006.57-.157c.236-.074.509-.122.792-.133h.006c.298-.012.579-.06.847-.139l-.025.006q.194-.048.399-.109t.351-.109v-.169q-.145-.217-.351-.496c-.131-.178-.278-.333-.443-.468l-.005-.004q-.629-.556-1.303-1.076c-.396-.309-.845-.624-1.311-.916l-.068-.04c-.246-.162-.528-.312-.825-.435l-.034-.012q-.448-.182-.883-.399c-.097-.048-.21-.09-.327-.119l-.011-.002c-.117-.024-.217-.084-.29-.169l-.001-.001c-.138-.182-.259-.389-.355-.609l-.008-.02q-.145-.339-.314-.651-.363-.702-.702-1.427t-.651-1.452q-.217-.484-.399-.967c-.134-.354-.285-.657-.461-.942l.013.023c-.432-.736-.863-1.364-1.331-1.961l.028.038c-.463-.584-.943-1.106-1.459-1.59l-.008-.007c-.509-.478-1.057-.934-1.632-1.356l-.049-.035q-.896-.651-1.96-1.282c-.285-.168-.616-.305-.965-.393l-.026-.006-1.113-.278-.629-.048q-.314-.024-.629-.024c-.148-.078-.275-.171-.387-.279-.11-.105-.229-.204-.353-.295l-.01-.007c-.605-.353-1.308-.676-2.043-.93l-.085-.026c-.193-.113-.425-.179-.672-.179-.176 0-.345.034-.499.095l.009-.003c-.38.151-.67.458-.795.84l-.003.01c-.073.172-.115.371-.115.581 0 .368.13.705.347.968l-.002-.003q.544.725.834 1.14.217.291.448.605c.141.188.266.403.367.63l.008.021c.056.119.105.261.141.407l.003.016q.048.206.121.448.217.556.411 1.14c.141.425.297.785.478 1.128l-.019-.04q.145.266.291.52t.314.496c.065.098.147.179.241.242l.003.002c.099.072.164.185.169.313v.001c-.114.168-.191.369-.217.586l-.001.006c-.035.253-.085.478-.153.695l.008-.03c-.223.666-.351 1.434-.351 2.231 0 .258.013.512.04.763l-.003-.031c.06.958.349 1.838.812 2.6l-.014-.025c.197.295.408.552.641.787.168.188.412.306.684.306.152 0 .296-.037.422-.103l-.005.002c.35-.126.599-.446.617-.827v-.002c.048-.474.12-.898.219-1.312l-.013.067c.024-.063.038-.135.038-.211 0-.015-.001-.03-.002-.045v.002q-.012-.109.133-.206v.048q.145.339.302.677t.326.677c.295.449.608.841.952 1.202l-.003-.003c.345.372.721.706 1.127 1.001l.022.015c.212.162.398.337.566.528l.004.004c.158.186.347.339.56.454l.01.005v-.024h.048c-.039-.087-.102-.157-.18-.205l-.002-.001c-.079-.044-.147-.088-.211-.136l.005.003q-.217-.217-.448-.484t-.423-.508q-.508-.702-.969-1.467t-.871-1.555q-.194-.387-.375-.798t-.351-.798c-.049-.099-.083-.213-.096-.334v-.005c-.006-.115-.072-.214-.168-.265l-.002-.001c-.121.206-.255.384-.408.545l.001-.001c-.159.167-.289.364-.382.58l-.005.013c-.141.342-.244.739-.289 1.154l-.002.019q-.072.641-.145 1.318l-.048.024-.024.024c-.26-.053-.474-.219-.59-.443l-.002-.005q-.182-.351-.326-.69c-.248-.637-.402-1.374-.423-2.144v-.009c-.009-.122-.013-.265-.013-.408 0-.666.105-1.308.299-1.91l-.012.044q.072-.266.314-.896t.097-.871c-.05-.165-.143-.304-.265-.41l-.001-.001c-.122-.106-.233-.217-.335-.335l-.003-.004q-.169-.244-.326-.52t-.278-.544c-.165-.382-.334-.861-.474-1.353l-.022-.089c-.159-.565-.336-1.043-.546-1.503l.026.064c-.111-.252-.24-.47-.39-.669l.006.008q-.244-.326-.436-.617-.244-.314-.484-.605c-.163-.197-.308-.419-.426-.657l-.009-.02c-.048-.097-.09-.21-.119-.327l-.002-.011c-.011-.035-.017-.076-.017-.117 0-.082.024-.159.066-.223l-.001.002c.011-.056.037-.105.073-.145.039-.035.089-.061.143-.072h.002c.085-.055.188-.088.3-.088.084 0 .165.019.236.053l-.003-.001c.219.062.396.124.569.195l-.036-.013q.459.194.847.375c.298.142.552.292.792.459l-.018-.012q.194.121.387.266t.411.291h.339q.387 0 .822.037c.293.023.564.078.822.164l-.024-.007c.481.143.894.312 1.286.515l-.041-.019q.593.302 1.125.641c.589.367 1.098.743 1.577 1.154l-.017-.014c.5.428.954.867 1.38 1.331l.01.012c.416.454.813.947 1.176 1.464l.031.047c.334.472.671 1.018.974 1.584l.042.085c.081.154.163.343.234.536l.011.033q.097.278.217.57.266.605.57 1.221t.57 1.198l.532 1.161c.187.406.396.756.639 1.079l-.011-.015c.203.217.474.369.778.422l.008.001c.368.092.678.196.978.319l-.047-.017c.143.065.327.134.516.195l.04.011c.212.065.396.151.565.259l-.009-.005c.327.183.604.363.868.559l-.021-.015q.411.302.822.57.194.145.651.423t.484.52c-.114-.004-.249-.007-.384-.007-.492 0-.976.032-1.45.094l.056-.006c-.536.072-1.022.203-1.479.39l.04-.014c-.113.049-.248.094-.388.129l-.019.004c-.142.021-.252.135-.266.277v.001c.061.076.11.164.143.26l.002.006c.034.102.075.19.125.272l-.003-.006c.119.211.247.393.391.561l-.004-.005c.141.174.3.325.476.454l.007.005q.244.194.508.399c.161.126.343.25.532.362l.024.013c.284.174.614.34.958.479l.046.016c.374.15.695.324.993.531l-.016-.011q.291.169.58.375t.556.399c.073.072.137.152.191.239l.003.005c.091.104.217.175.36.193h.003v-.048c-.088-.067-.153-.16-.184-.267l-.001-.004c-.025-.102-.062-.191-.112-.273l.002.004zm-18.576-19.205q-.194 0-.363.012c-.115.008-.222.029-.323.063l.009-.003v.024h.048q.097.145.244.326t.266.351l.387.798.048-.024c.113-.082.2-.192.252-.321l.002-.005c.052-.139.082-.301.082-.469 0-.018 0-.036-.001-.054v.003c-.045-.044-.082-.096-.108-.154l-.001-.003-.081-.182c-.053-.084-.127-.15-.214-.192l-.003-.001c-.094-.045-.174-.102-.244-.169z"></path>
+  </symbol>
+  <symbol id="facebook" viewBox="0 0 16 16">
+    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+  </symbol>
+  <symbol id="instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+  </symbol>
+  <symbol id="linkedin" viewBox="0 0 448 512">
+      <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+  </symbol>
+  <symbol id="github" viewBox="0 0 496 512">
+      <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+  </symbol>
+  <symbol id="whatsapp" viewBox="0 0 448 512">
+      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+  </symbol>
+  <symbol id="phone" viewBox="0 0 512 512">
+      <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path>
+  </symbol>
+  <symbol id="email" viewBox="0 0 512 512">
+      <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path>
+  </symbol>
+</svg>
+
+</html>
