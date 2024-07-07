@@ -76,7 +76,7 @@ function criarObserver(elementId, callback) {
         }
       });
     }, {
-      threshold: 0.5 // Ajuste este valor conforme necessário
+      threshold: 0.3 // Ajuste este valor conforme necessário
     });
       
     observer.observe(elemento);
