@@ -1,9 +1,4 @@
-// menu
-var telaInicio = true;
-var telaProjetos = false;
-var telaSobreMim = false;
-var telaHabilidades = false;
-var telaContatos = false;
+
 
 // Função de rolagem suave para um ID específico
 function jumpToId(id) {
@@ -94,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const observerOptions = {
       root: null,
-      rootMargin: "1% 0% 1% 0%",
       threshold:  0.5// Ajuste esse valor conforme necessário
   };
 
