@@ -131,7 +131,7 @@ main#sobreMim{
 }
 
 main#habilidades{
-    height: 100vh;
+    min-height: 100vh;
     padding: 10vh 1vh 0 1vh;
 }
 
@@ -275,7 +275,7 @@ main#habilidades{
 
 
 main#contatos{
-    height: 90vh;
+    min-height: 90vh;
     padding: 10vh 1vh 0 1vh;
 }
 
@@ -286,15 +286,9 @@ path {
 /*RESPONSIVIDADE*/
 
 @media (max-width: 1199px) {
-    main#habilidades{
-        height: 130vh;
-    }    
 }
 
-@media (max-width: 991px) {
-    main#habilidades{
-        height: 150vh;
-    }  
+@media (max-width: 991px) { 
 }
 
 @media (max-width: 767px) {
@@ -330,14 +324,7 @@ path {
     .vr{
         display: none;
     }
-
-    main#habilidades{
-        height: 170vh;
-    }
 }
 
 @media (max-width: 575px) {
-    main#habilidades{
-        height: 200vh;
-    } 
 }
