@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const observerOptions = {
       root: null,
-      rootMargin: "10% 0% 10% 0%",
+      rootMargin: "5% 0% 5% 0%",
       threshold:  0.5// Ajuste esse valor conforme necessário
   };
 

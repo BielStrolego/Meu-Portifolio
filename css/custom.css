@@ -97,7 +97,7 @@ main#inicio{
 
 main#projetos{
     height: 100vh;
-    padding: 15vh 1vh 0 1vh;
+    padding: 10vh 1vh 0 1vh;
 }
   
 .container.projetos{
@@ -131,7 +131,7 @@ main#sobreMim{
 }
 
 main#habilidades{
-    height: 100%;
+    height: 100vh;
     padding: 10vh 1vh 0 1vh;
 }
 
@@ -220,6 +220,7 @@ main#habilidades{
 .bi.modal-icon{
     height: 300px;
     width: 300px;
+    margin: 0 5vh 0 5vh;    
 }
 
 .modal.angular {
@@ -274,8 +275,8 @@ main#habilidades{
 
 
 main#contatos{
-    height: 90%;
-    padding: 15vh 1vh 0 1vh;
+    height: 90vh;
+    padding: 5vh 1vh 0 1vh;
 }
 
 path {
@@ -285,13 +286,11 @@ path {
 /*RESPONSIVIDADE*/
 
 @media (max-width: 1199px) {
-
-
+   
 }
 
 @media (max-width: 991px) {
 
-    
 }
 
 @media (max-width: 767px) {
@@ -327,6 +326,7 @@ path {
     .vr{
         display: none;
     }
+
 
 }
 
