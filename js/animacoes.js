@@ -81,7 +81,7 @@ function criarObserver(elementId, callback) {
         }
       });
     }, {
-      threshold: 0.2 // Ajuste este valor conforme necessário
+      threshold: 0.5 // Ajuste este valor conforme necessário
     });
       
     observer.observe(elemento);
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const observerOptions = {
       root: null,
-      rootMargin: "5% 0% 5% 0%",
+      rootMargin: "1% 0% 1% 0%",
       threshold:  0.5// Ajuste esse valor conforme necessário
   };
 
