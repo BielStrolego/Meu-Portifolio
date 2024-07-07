@@ -96,14 +96,14 @@ main#inicio{
 }
 
 main#projetos{
-    height: 100vh;
+    min-height: 100vh;
     padding: 10vh 1vh 0 1vh;
 }
   
 .container.projetos{
     background-image: url('../assets/img/BG-desk.jpg');
     background-position: center center;
-    height: 70vh;
+    min-height: 70vh;
 }
 
 .btn.btn-default.projeto{
@@ -146,10 +146,6 @@ main#sobreMim{
 .img-dev{
     width: 300px;
     height: 300px;
-}
-
-.col.sobre-mim{
-    height: 100%;
 }
 
 main#habilidades{
