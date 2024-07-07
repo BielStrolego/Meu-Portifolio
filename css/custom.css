@@ -333,8 +333,7 @@ path {
 
     main#habilidades{
         height: 170vh;
-    } 
-
+    }
 }
 
 @media (max-width: 575px) {
