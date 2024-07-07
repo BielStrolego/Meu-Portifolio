@@ -101,6 +101,7 @@ main#projetos{
 }
   
 .container.projetos{
+    display: flex;
     background-image: url('../assets/img/BG-desk.jpg');
     background-position: center center;
     min-height: 70vh;
