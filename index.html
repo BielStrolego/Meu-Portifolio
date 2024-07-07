@@ -70,19 +70,22 @@
                 <div class="row flex-column">
                   <div class="col">
                     <button type="button" class="btn btn-default projeto text-center" data-bs-toggle="modal" data-bs-target="#projeto1">
-                      <div><img src="assets/img/computador.png" height="90px" width="90px" alt="EsteComputador" class="img-fluid"></div>
+                      <div><img src="assets/img/computador.png" alt="EsteComputador" class="img-fluid icon-projetos-desk"></div>
+                      <div><img src="assets/img/computador.png" alt="EsteComputador" class="img-fluid icon-projetos-mobile"></div>
                       <div>Este Computador</div>
                     </button>
                   </div>
                   <div class="col">
                     <button type="button" class="btn btn-default projeto text-center" data-bs-toggle="modal" data-bs-target="#projeto2">
-                      <div><img src="assets/img/pasta.png" height="90px" width="90px" alt="Projetos Python" class="img-fluid"></div>
+                      <div><img src="assets/img/pasta.png" alt="Projetos Python" class="img-fluid icon-projetos-desk"></div>
+                      <div><img src="assets/img/pasta.png" alt="Projetos Python" class="img-fluid icon-projetos-mobile"></div>
                       <div>Projetos Python</div>
                     </button>
                   </div>
                   <div class="col">
                     <button type="button" class="btn btn-default projeto text-center" data-bs-toggle="modal" data-bs-target="#projeto3">
-                      <div><img src="assets/img/trash.png"height="90px" width="90px" alt="Lixeira" class="img-fluid"></div>
+                      <div><img src="assets/img/trash.png" alt="Lixeira" class="img-fluid icon-projetos-desk"></div>
+                      <div><img src="assets/img/trash.png" alt="Lixeira" class="img-fluid icon-projetos-mobile"></div>
                       <div>Lixeira</div>
                     </button>
                   </div>
@@ -90,14 +93,27 @@
 
                 <!-- modal projeto 1-->
                 <div class="modal projetos" tabindex="-1" id="projeto1" data-bs-backdrop="false">
-                  <div class="modal-dialog modal-dialog-centered">
+                  <!-- modal desk-->
+                  <div class="modal-dialog modal-dialog-centered modal-projeto-desk">
                     <div class="modal-content shadow">
                       <div class="modal-header">
                         <h5 class="modal-title">Projeto 1</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <p>Modal body text goes here.</p>
+                        <p>Em Breve</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal mobile-->
+                  <div class="modal-dialog modal-dialog-centered modal-projeto-mobile">
+                    <div class="modal-content shadow">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Projeto 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Em Breve</p>
                       </div>
                     </div>
                   </div>
@@ -105,14 +121,27 @@
 
                 <!-- modal projeto 2-->
                 <div class="modal projetos" tabindex="-1" id="projeto2" data-bs-backdrop="false">
-                  <div class="modal-dialog modal-dialog-centered">
+                  <!-- modal desk-->
+                  <div class="modal-dialog modal-dialog-centered modal-projeto-desk">
                     <div class="modal-content shadow">
                       <div class="modal-header">
                         <h5 class="modal-title">Projeto 2</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <p>Modal body text goes here.</p>
+                        <p>Em Breve</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal mobile-->
+                  <div class="modal-dialog modal-dialog-centered modal-projeto-mobile">
+                    <div class="modal-content shadow">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Projeto 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Em Breve</p>
                       </div>
                     </div>
                   </div>
@@ -120,14 +149,27 @@
 
                 <!-- modal projeto 3-->
                 <div class="modal projetos" tabindex="-1" id="projeto3" data-bs-backdrop="false">
-                  <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-dialog modal-dialog-centered modal-projeto-desk">
+                    <!-- modal desk-->
                     <div class="modal-content shadow">
                       <div class="modal-header">
                         <h5 class="modal-title">Projeto 3</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <p>Modal body text goes here.</p>
+                        <p>Em Breve</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal mobile-->
+                  <div class="modal-dialog modal-dialog-centered modal-projeto-mobile">
+                    <div class="modal-content shadow">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Projeto 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Em Breve</p>
                       </div>
                     </div>
                   </div>
@@ -142,7 +184,6 @@
         <section class="fade-out">
           <div class="container-fluid">
             <h1>Sobre mim</h1>
-            <div class="container-sm ">
               <div class="container text-center">
                 <div class="row align-items-center">
                   <div class="col-1">
@@ -150,12 +191,12 @@
                   </div>
                   <div class="col sobre-mim bg-secondary-subtle rounded-4 border shadow-sm my-4 mx-4 p-4">
                     <div class="row gap-4">
-                      <div class="col d-flex align-items-center">
-                        <img src="assets/img/dev/GabrielS.jpg" width="300" height="300" class="rounded-circle border border-light border-5 shadow float-start" alt="foto do desenvolvedor do site">
+                      <div class="col d-flex align-items-center text-center">
+                        <img src="assets/img/dev/GabrielS.jpg"  class="rounded-circle border border-light border-5 shadow mx-auto d-block img-dev" alt="foto do desenvolvedor do site">
                         <div class="vr ms-3"></div>
                       </div>
                       <div class="col d-flex align-items-center">
-                        <p class="text-start"> Meu nome é Gabriel Strolego.</p>
+                        <p class="text-start"> Olá! Gabriel Strolego Queiroz é meu nome e nasci em agosto de 2000.<br> Meu caminho incluiu a fundação da empresa G-Logic e formação técnica em informática. <br>Além de fornecer suporte técnico para empresas e serviços de gráfica, a G-Logic oferece manutenção de computadores, notebooks e celulares, criação de sistemas, sites e aplicativos, instalação de câmeras de segurança e infraestrutura. <br>Como desenvolvedor Full Stack, estou sempre entusiasmado em usar a tecnologia para fazer ideias acontecerem. </p>
                         <p class="text-start"></p>
                       </div>
                       
@@ -167,7 +208,6 @@
                   </div>
                 </div>
               </div>
-            </div>
         </section>
       </main>
 
@@ -551,20 +591,20 @@
                   <ul class="bg-secondary-subtle rounded-4 border shadow-sm mx-4 p-3">
                     <li class="list-group-item pb-4 border-bottom border-dark-subtle">
                       <h5>E-mails:</h5>
-                      <a type="button" class="btn btn-outline-dark border-2 my-1"> <svg class="bi" width="25" height="25"><use fill="#6c757d" xlink:href="#email"></use></svg> gsq.25@hotmail.com</a>
-                      <a type="button" class="btn btn-outline-dark border-2  my-1"> <svg class="bi" width="25" height="25"><use fill="#6c757d" xlink:href="#email"></use></svg> gsq.2525@gmail.com</a>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1" href="mailto:gsq.25@hotmail.com" target="_blank"> <svg class="bi" width="25" height="25"><use fill="#6c757d" xlink:href="#email"></use></svg> gsq.25@hotmail.com</a>
+                      <a type="button" class="btn btn-outline-dark border-2  my-1" href="mailto:gsq.2525@gmail.com" target="_blank"> <svg class="bi" width="25" height="25"><use fill="#6c757d" xlink:href="#email"></use></svg> gsq.2525@gmail.com</a>
                     </li>
                     <li class="list-group-item py-4 border-bottom border-dark-subtle">
                       <h5>Celular</h5>
                       <a type="button" class="btn btn-outline-dark border-2 my-1 disabled"><svg class="bi" width="25" height="25"><use fill="#111" xlink:href="#phone"></use></svg> (021) 98167-5537</a>
-                      <a type="button" class="btn btn-outline-dark border-2 my-1"><svg class="bi" width="25" height="25"><use fill="#017561" xlink:href="#whatsapp"></use></svg> (021) 98167-5537</a>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1" href="https://wa.me/21981675527" target="_blank"><svg class="bi" width="25" height="25"><use fill="#017561" xlink:href="#whatsapp"></use></svg> (021) 98167-5537</a>
                     </li>
                     <li class="list-group-item pt-4">
                       <h5>Redes Sociais:</h5>
-                      <a type="button" class="btn btn-outline-dark border-2 my-1"><svg class="bi" width="25" height="25"><use fill="#db1863" xlink:href="#instagram"></use></svg> @Biel_Strolego</a>
-                      <a type="button" class="btn btn-outline-dark border-2 my-1"><svg class="bi" width="25" height="25"><use fill="#0a66c2" xlink:href="#linkedin"></use></svg> gabriel-strolego</a>
-                      <a type="button" class="btn btn-outline-dark border-2 my-1"><svg class="bi" width="25" height="25"><use fill="#555555" xlink:href="#github"></use></svg> BielStrolego</a>
-                      <a type="button" class="btn btn-outline-dark border-2 my-1"><svg class="bi" width="25" height="25"><use fill="#0a66c2" xlink:href="#facebook"></use></svg> gabriel-strolego</a>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1" href="https://www.instagram.com/biel_strolego/" target="_blank"><svg class="bi" width="25" height="25"><use fill="#db1863" xlink:href="#instagram"></use></svg> @Biel_Strolego</a>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1" href="https://www.linkedin.com/in/gabriel-strolego/" target="_blank"><svg class="bi" width="25" height="25"><use fill="#0a66c2" xlink:href="#linkedin"></use></svg> gabriel-strolego</a>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1" href="https://github.com/BielStrolego/" target="_blank"><svg class="bi" width="25" height="25"><use fill="#555555" xlink:href="#github"></use></svg> BielStrolego</a>
+                      <a type="button" class="btn btn-outline-dark border-2 my-1" href="https://www.facebook.com/gabriel.strolego.9/" target="_blank"><svg class="bi" width="25" height="25"><use fill="#0a66c2" xlink:href="#facebook"></use></svg> Gabriel Strolego</a>
                     </li>
                   </ul>
                 </div>

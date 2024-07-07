@@ -101,7 +101,7 @@ main#projetos{
 }
   
 .container.projetos{
-    background-image: url('../assets/img/BG_win.jpg');
+    background-image: url('../assets/img/BG-desk.jpg');
     background-position: center center;
     height: 70vh;
 }
@@ -121,9 +121,31 @@ main#projetos{
     1px  1px 0 #000; /* Contorno preto */
 }
 
+.icon-projetos-desk{
+    height:90px;
+    width:90px;
+}
+
+.icon-projetos-mobile{
+    display: none;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    height:80px;
+    width:80px;
+}
+
+.modal-projeto-mobile{
+    display: none;
+}
+
 main#sobreMim{
-    height: 100vh;
+    min-height: 100vh;
     padding: 10vh 1vh 0 1vh;
+}
+
+.img-dev{
+    width: 300px;
+    height: 300px;
 }
 
 .col.sobre-mim{
@@ -266,7 +288,7 @@ main#habilidades{
 }
 .modal.php {
     --bs-modal-bg:#4f5b93;
-    color: #555555;
+    color: #fff;
 }
 .modal.mysql {
     --bs-modal-bg:#f89d25;
@@ -289,6 +311,14 @@ path {
 }
 
 @media (max-width: 991px) { 
+    .img-dev{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .vr{
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -306,8 +336,6 @@ path {
         margin: 1% 0 1% 0;
     }
 
-    
-
     .inicio1{
         padding: 25vh 0 0 0;
     }
@@ -316,15 +344,50 @@ path {
         padding: 25vh 0 0 0;
     }
 
+    .container.projetos{
+        background-image: url('../assets/img/BG-mobile.jpg');
+    }
+    .btn.btn-default.projeto{
+        width: 140px;
+        --bs-btn-hover-border-color: rgba(255, 255, 255, 0);
+        --bs-btn-hover-bg: rgba(255, 255, 255, 0);
+        --bs-btn-active-bg: rgba(255, 255, 255, 0);
+        --bs-btn-active-border-color: rgba(255, 255, 255, 0);
+    
+        color: white; /* Cor do texto */
+        text-shadow:
+        -1px -1px 0 #00000000,  
+        1px -1px 0 #00000000,
+        -1px  1px 0 #00000000,
+        1px  1px 0 #00000000; /* Contorno preto */
+    }
+
+    .icon-projetos-desk{
+        display: none;
+    }
+
+    .icon-projetos-mobile{
+        display:inline-flex;
+    }
+
+    .modal-projeto-desk{
+        display: none;
+    }
+    
+    .modal-projeto-mobile{
+        display:flex;
+        margin: 0 4vh 0 4vh;
+    }
+
     .bi.modal-icon{
         height: 250px;
         width: 250px;
     }
-
-    .vr{
-        display: none;
-    }
 }
 
 @media (max-width: 575px) {
+    .img-dev{
+        width: 220px;
+        height: 220px;
+    }
 }
